@@ -71,3 +71,28 @@ function factorial(n){
 }
 factorial(5);
 
+// Фибоначчи
+// рекурсия
+
+
+function fib(n) {
+    if (n <= 1){
+        return n;
+    }
+    else {
+        return fib(n - 1) + fib(n - 2);
+    }
+}
+fib(3);
+
+//цикл
+
+    function fib(n) {
+        var a = 1, b = 1;
+        for (var i = 3; i <= n; i++){
+            var c = a + b;
+            a = b;
+            b = c;
+        }
+        return b;
+    }

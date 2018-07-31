@@ -1,13 +1,13 @@
 
 //Необходимо вывести на экран числа от 1 до 5.
 
-for(var a = 1; a <= 5; a++) {
+for (var a = 1; a <= 5; a++) {
     console.log(a);
 }
 
 //Необходимо вывести на экран числа от 5 до 1.
 
-for(var b = 5; b >= 1; b--) {
+for (var b = 5; b >= 1; b--) {
     console.log(b);
 }
 
@@ -33,7 +33,7 @@ console.log( array1.concat(array2) );
 
 function sumTo(n) {
 
-    if(n > 1) {
+    if (n > 1) {
         return n + sumTo(n - 1);
     } else {
         return n;
@@ -46,7 +46,7 @@ sumTo(4);
 function sumTo(n) {
  var result = 1;
 
- for(n; n > 1; n--) {
+ for (n; n > 1; n--) {
      result+= n;
  }
 
@@ -58,7 +58,7 @@ sumTo(4);
 
 function sumTo(n) {
 
-    return (n*(n + 1))/2;
+    return ( n * (n + 1) ) / 2;
 }
 sumTo(4);
 
@@ -66,7 +66,7 @@ sumTo(4);
 
 function factorial(n) {
 
-    if(n > 1) {
+    if (n > 1) {
         return n * factorial(n - 1);
     } else {
         return n;

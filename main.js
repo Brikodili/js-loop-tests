@@ -1,13 +1,13 @@
 
 //Необходимо вывести на экран числа от 1 до 5.
 
-for(var a = 1; a <= 5; a++){
+for(var a = 1; a <= 5; a++) {
     console.log(a);
 }
 
 //Необходимо вывести на экран числа от 5 до 1.
 
-for(var b = 5; b >= 1; b--){
+for(var b = 5; b >= 1; b--) {
     console.log(b);
 }
 
@@ -31,11 +31,11 @@ console.log( array1.concat(array2) );
 
 //рекурсивный способ решения
 
-function sumTo(n){
+function sumTo(n) {
 
-    if(n > 1){
+    if(n > 1) {
         return n + sumTo(n - 1);
-    } else{
+    } else {
         return n;
     }
 }
@@ -43,10 +43,10 @@ sumTo(4);
 
 // способ решения через цикл
 
-function sumTo(n){
+function sumTo(n) {
  var result = 1;
 
- for(n; n > 1; n--){
+ for(n; n > 1; n--) {
      result+= n;
  }
 
@@ -56,7 +56,7 @@ sumTo(4);
 
 //решение по формуле арифметической прогрессии
 
-function sumTo(n){
+function sumTo(n) {
 
     return (n*(n + 1))/2;
 }
@@ -64,9 +64,9 @@ sumTo(4);
 
 //Вычислить факториал
 
-function factorial(n){
+function factorial(n) {
 
-    if(n > 1){
+    if(n > 1) {
         return n * factorial(n - 1);
     } else {
         return n;
@@ -80,7 +80,7 @@ factorial(5);
 
 function fib(n) {
 
-    if (n <= 1){
+    if (n <= 1) {
         return n;
     } else {
         return fib(n - 1) + fib(n - 2);
@@ -93,11 +93,11 @@ fib(3);
 function fib(n) {
     var a = 1, b = 1;
 
-    for (var i = 3; i <= n; i++){
+    for (var i = 3; i <= n; i++) {
         var c = a + b;
             a = b;
             b = c;
         }
 
-        return b;
+    return b;
 }

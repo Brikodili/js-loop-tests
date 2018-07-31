@@ -24,7 +24,7 @@ console.log(myArr);
 var array1 = [1, 2, 3];
 var array2 = [4, 5, 6];
 
-console.log(array1.concat(array2));
+console.log( array1.concat(array2) );
 
 //Напишите программу, где пользователь вводит любое целое положительное число. 
 // А программа суммирует все числа от 1 до введенного пользователем числа.
@@ -32,10 +32,10 @@ console.log(array1.concat(array2));
 //рекурсивный способ решения
 
 function sumTo(n){
+
     if(n > 1){
         return n + sumTo(n - 1);
-    }
-    else{
+    } else{
         return n;
     }
 }
@@ -45,9 +45,11 @@ sumTo(4);
 
 function sumTo(n){
  var result = 1;
+
  for(n; n > 1; n--){
      result+= n;
  }
+
  return result;
 }
 sumTo(4);
@@ -55,6 +57,7 @@ sumTo(4);
 //решение по формуле арифметической прогрессии
 
 function sumTo(n){
+
     return (n*(n + 1))/2;
 }
 sumTo(4);
@@ -62,10 +65,10 @@ sumTo(4);
 //Вычислить факториал
 
 function factorial(n){
+
     if(n > 1){
         return n * factorial(n - 1);
-    }
-    else {
+    } else {
         return n;
     }
 }
@@ -76,10 +79,10 @@ factorial(5);
 
 
 function fib(n) {
+
     if (n <= 1){
         return n;
-    }
-    else {
+    } else {
         return fib(n - 1) + fib(n - 2);
     }
 }
@@ -87,12 +90,14 @@ fib(3);
 
 //цикл
 
-    function fib(n) {
-        var a = 1, b = 1;
-        for (var i = 3; i <= n; i++){
-            var c = a + b;
+function fib(n) {
+    var a = 1, b = 1;
+
+    for (var i = 3; i <= n; i++){
+        var c = a + b;
             a = b;
             b = c;
         }
+
         return b;
-    }
+}
